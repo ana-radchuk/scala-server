@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  secondary1:
+    build: .
+    command: ["java", "-cp", "secondary-scala.jar:scala-library-2.12.12.jar", "AkkaHttpJson"]
+    environment:
+      SECONDARY1_HOST: '*'
+      SECONDARY1_PORT: 3000
+    ports:
+      - 2201:3000
