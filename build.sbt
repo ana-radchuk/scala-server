@@ -1,3 +1,8 @@
+import sbtassembly.AssemblyKeys._
+import sbtassembly.AssemblyPlugin.assemblySettings
+
+assemblySettings
+
 name := "secondary-scala"
 
 version := "0.1"
